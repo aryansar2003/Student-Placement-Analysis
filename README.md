@@ -1,25 +1,26 @@
 # 🎓 Student Placement Analysis Dashboard
 
-## 📌 Project Overview
+An end-to-end Data Analytics project that analyzes factors influencing student placements using **SQL, Python, and Power BI**.
 
-This project analyzes **45,000 student records** to identify the key factors influencing placement success.
-
-Using **SQL, Python, and Power BI**, the project explores academic performance, coding skills, communication skills, internships, projects, backlogs, and risk categories to generate actionable insights for improving placement outcomes.
+The project combines data cleaning, exploratory data analysis, SQL-based business analysis, and an interactive Power BI dashboard to identify the key drivers of student placement success and provide actionable recommendations for improving placement outcomes.
 
 ---
 
-## 🎯 Business Problem
+# 📌 Project Overview
 
-Educational institutions often struggle to identify why some students get placed while others do not.
+The objective of this project is to identify the academic and non-academic factors that influence student placements.
 
-This project answers questions such as:
+The analysis focuses on:
 
-- Which branches have the highest placement rates?
-- Does CGPA influence placement?
-- How important are internships?
-- Do coding skills improve employability?
-- Which students are at higher placement risk?
-- What actions can colleges take to improve placement outcomes?
+- Academic Performance (CGPA)
+- Coding Skills
+- Communication Skills
+- Internship Experience
+- Academic Backlogs
+- Projects Completed
+- Placement Risk Categories
+
+The final dashboard helps placement teams identify at-risk students early and make data-driven decisions to improve placement rates.
 
 ---
 
@@ -36,15 +37,22 @@ This project answers questions such as:
 
 ---
 
-# 📂 Project Structure
+# 📂 Repository Structure
 
 ```
-Dataset/
-SQL/
-Python/
-Power BI/
-Dashboard Screenshots/
-README.md
+Student-Placement-Analysis
+│
+├── Student Placement Analysis.sql
+├── Student Placement EDA.ipynb
+├── student placement dashboard.pbix
+├── student_placement_dataset.csv
+│
+├── Executive Dashboard.png
+├── Placement Drivers.png
+├── Student Explorer.png
+├── Strategic Insights.png
+│
+└── README.md
 ```
 
 ---
@@ -53,49 +61,88 @@ README.md
 
 ## 1️⃣ Executive Dashboard
 
-Provides an overview of:
+Provides a high-level overview of placement performance.
+
+### KPIs
 
 - Total Students
 - Placed Students
 - Unplaced Students
 - Placement Rate
-- Placement by Branch
-- Placement by Degree
-- Placement by CGPA Band
-- Placement by Internship Count
+
+### Visuals
+
+- Placement Rate by Branch
+- Placement Rate by Degree
+- Placement Rate by CGPA Band
+- Placement Rate by Internships
+
+### Filters
+
+- Branch
+- Degree
+- Gender
+
+---
+
+![Executive Dashboard](Executive%20Dashboard.png)
 
 ---
 
 ## 2️⃣ Placement Drivers Analysis
 
-Analyzes the major factors affecting placements:
+Identifies the major factors affecting student placements.
 
-- Coding Skills
-- Communication Skills
-- Aptitude
-- Projects
+### KPIs
+
+- Students with Low Coding Skills
+- High Risk Students
+- Students without Internships
+- Students with Backlogs
+
+### Visuals
+
+- Coding Skills Band
+- Communication Skills Band
+- Project Band
+- Aptitude Band
 - Backlogs
 - Risk Category
 
 ---
 
+![Placement Drivers](Placement%20Drivers.png)
+
+---
+
 ## 3️⃣ Student Explorer
 
-Interactive table with filters allowing users to explore individual student records.
+Interactive student-level analysis.
 
-Includes:
+Features include:
 
-- Conditional Formatting
+- Student-wise filtering
 - Placement Status
 - Risk Category
-- Academic Performance
-- Student-level Filtering
+- Branch
+- Degree
+- Gender
+
+Conditional formatting highlights:
+
+- CGPA
+- Backlogs
+- Placement Status
+
+---
+
+![Student Explorer](Student%20Explorer.png)
 
 ---
 
 ## 4️⃣ Strategic Insights & Action Plan
 
-Converts analytical findings into business recommendations.
+A management-level summary that converts analysis into actionable recommendations.
 
 Includes:
 
@@ -104,42 +151,120 @@ Includes:
 - Business Impact
 - Recommended Actions
 
----
+Focus Areas:
 
-# 💡 Key Insights
-
-- Students with **CGPA above 8** achieved nearly **70% placement rate**.
-- Internship experience significantly increased placement success.
-- Higher coding skills were strongly associated with better placement outcomes.
-- Students with academic backlogs had much lower placement rates.
-- High-risk students require early intervention and targeted support.
+- Academic Performance
+- Internship Experience
+- Technical Skills
+- Risk & Backlogs
 
 ---
 
-# 📈 Business Recommendations
-
-- Provide academic mentoring for low-CGPA students.
-- Increase internship opportunities through industry partnerships.
-- Conduct coding bootcamps and placement-focused technical training.
-- Offer personalized mentoring for high-risk students.
-- Introduce early placement readiness programs.
+![Strategic Insights](Strategic%20Insights.png)
 
 ---
 
-# 📷 Dashboard Preview
+# 🔍 SQL Analysis
 
-Dashboard screenshots are available inside the **Dashboard Screenshots** folder.
+The SQL analysis answers important business questions such as:
+
+- Overall Placement Rate
+- Branch-wise Placement Performance
+- Degree-wise Placement Analysis
+- CGPA Impact on Placements
+- Internship Impact
+- Placement Trends
+- Risk Category Analysis
+- Coding Skills Analysis
+- Communication Skills Analysis
+
+SQL concepts used:
+
+- CTEs
+- Window Functions
+- Aggregate Functions
+- CASE WHEN
+- GROUP BY
+- Joins
+- Ranking Functions
 
 ---
 
-# 🚀 Skills Demonstrated
+# 🐍 Python Analysis
 
-- SQL Analysis
-- Python EDA
+Python was used for:
+
 - Data Cleaning
+- Missing Value Handling
+- Exploratory Data Analysis
+- Feature Engineering
 - Data Visualization
-- DAX
-- Power BI
-- Dashboard Design
-- Business Intelligence
-- Storytelling with Data
+- Correlation Analysis
+
+Libraries used:
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+---
+
+# 📈 Key Insights
+
+- Students with **CGPA above 8** achieved approximately **70% placement rate**.
+- Students with **CGPA below 6** had almost **0% placement rate**.
+- Internship experience significantly improved placement chances.
+- Higher coding skill levels resulted in better placement outcomes.
+- Academic backlogs negatively impacted placements.
+- High-risk students showed considerably lower placement success.
+
+---
+
+# 💡 Business Recommendations
+
+Based on the analysis:
+
+- Identify academically weak students early.
+- Increase internship opportunities through industry partnerships.
+- Conduct coding bootcamps and technical workshops.
+- Provide additional mentoring for students with backlogs.
+- Monitor high-risk students throughout the placement season.
+
+---
+
+# 📁 Files Included
+
+| File | Description |
+|------|-------------|
+| Student Placement Analysis.sql | SQL Business Analysis |
+| Student Placement EDA.ipynb | Python EDA |
+| student placement dashboard.pbix | Interactive Power BI Dashboard |
+| student_placement_dataset.csv | Dataset |
+| Executive Dashboard.png | Dashboard Preview |
+| Placement Drivers.png | Dashboard Preview |
+| Student Explorer.png | Dashboard Preview |
+| Strategic Insights.png | Dashboard Preview |
+
+---
+
+# 🚀 Future Improvements
+
+- Predictive Placement Model using Machine Learning
+- Placement Forecasting
+- Department Comparison Dashboard
+- Company-wise Hiring Dashboard
+- Placement Trend Analysis
+- Power BI Service Deployment
+
+---
+
+## 👨‍💻 Author
+
+**Aryan Saraswat**
+
+Aspiring Data Analyst passionate about solving business problems using SQL, Python, and Power BI.
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
