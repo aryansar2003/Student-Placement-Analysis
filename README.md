@@ -7,8 +7,6 @@ see which factors affect whether a student gets placed.
 
 -   45,000 student records with CGPA, internships, coding skills,
     communication skills, backlogs, projects, branch and degree
--   Source: \[add dataset link here, and mention if it is a synthetic or
-    public practice dataset\]
 
 ## Google Cloud Platform (GCP)
 
